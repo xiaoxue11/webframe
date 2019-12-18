@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<dir>
+    {% if user.is_authenticated %}
+    <h3>Hello, {{user.username}}</h3>
+    <a href="{%url 'user:logout'%}">Logout</a>
+    {%else%}
+    <a href="{%url 'user:register'%}">Register</a>
+    <a href="{%url 'user:login'%}">Login</a>
+    {% endif %}
+    {% for book in books%}
+    <h3>{{book.name}}</h3>
+    <p>{{book.content}}</p>
+    <img src="{{book.img.url}}">
+    {% endfor %}
+
+</dir>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+{% for type in types %}
+<h3>{{type.name}}</h3>
+<p>{{type.content}}</p>
+<img src="{{type.img.url}}" alt="book">
+{% endfor %}
+</body>
+</html>

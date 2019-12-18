@@ -1,0 +1,345 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 13:54:11 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41551 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Aug 20 2019, 17:12:48)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x5584128e0a30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5584128e0a30 pid: 4872 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4872)
+spawned uWSGI worker 1 (pid: 4874, cores: 2)
+spawned uWSGI worker 2 (pid: 4875, cores: 2)
+spawned uWSGI worker 3 (pid: 4876, cores: 2)
+spawned uWSGI worker 4 (pid: 4879, cores: 2)
+spawned uWSGI http 1 (pid: 4882)
+[pid: 4876|app: 0|req: 1/1] 127.0.0.1 () {36 vars in 564 bytes} [Wed Oct  2 18:55:37 2019] GET /polls/ => generated 217 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 4876|app: 0|req: 2/2] 127.0.0.1 () {36 vars in 564 bytes} [Wed Oct  2 18:57:20 2019] GET /polls/ => generated 217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /polls/
+[pid: 4875|app: 0|req: 1/3] 127.0.0.1 () {38 vars in 655 bytes} [Wed Oct  2 18:57:31 2019] GET /polls/ => generated 55245 bytes in 76 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /polls/
+[pid: 4879|app: 0|req: 1/4] 127.0.0.1 () {38 vars in 655 bytes} [Wed Oct  2 18:57:49 2019] GET /polls/ => generated 55245 bytes in 59 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /polls/
+[pid: 4875|app: 0|req: 2/5] 127.0.0.1 () {40 vars in 686 bytes} [Wed Oct  2 19:36:10 2019] GET /polls/ => generated 55380 bytes in 69 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4882)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 14:39:11 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44699 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Aug 20 2019, 17:12:48)  [GCC 8.3.0]
+!!! Python Home is not a directory: /home/xue/webframe/h2y !!!
+Set PythonHome to /home/xue/webframe/h2y
+Fatal Python error: Py_Initialize: Unable to get the locale encoding
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007fa927402740 (most recent call first):
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 14:41:22 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44649 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Aug 20 2019, 17:12:48)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x55ba3d2eaa30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ba3d2eaa30 pid: 5906 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5906)
+spawned uWSGI worker 1 (pid: 5908, cores: 2)
+spawned uWSGI worker 2 (pid: 5909, cores: 2)
+spawned uWSGI worker 3 (pid: 5911, cores: 2)
+spawned uWSGI worker 4 (pid: 5913, cores: 2)
+spawned uWSGI http 1 (pid: 5915)
+[pid: 5909|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 686 bytes} [Wed Oct  2 19:41:31 2019] GET /polls/ => generated 217 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 5911|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 686 bytes} [Wed Oct  2 19:41:34 2019] GET /polls/ => generated 217 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5915)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 14:42:33 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.6.8 (default, Aug 20 2019, 17:12:48)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x55ecfbc36950
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ecfbc36950 pid: 5935 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5935)
+spawned uWSGI worker 1 (pid: 5937, cores: 2)
+spawned uWSGI worker 2 (pid: 5938, cores: 2)
+spawned uWSGI worker 3 (pid: 5940, cores: 2)
+spawned uWSGI worker 4 (pid: 5942, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 14:42:35 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+...brutally killing workers...
+Gracefully killing worker 1 (pid: 5937)...
+Gracefully killing worker 2 (pid: 5938)...
+Gracefully killing worker 4 (pid: 5942)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/xue/webframe/learning/mysite
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (127.0.0.1:8080)
+running /home/xue/webframe/h2/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Oct  2 20:17:17 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-29-generic #31~18.04.1-Ubuntu SMP Thu Sep 12 18:29:21 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8080 fd 3
+Python version: 3.6.8 (default, Aug 20 2019, 17:12:48)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x561029d008d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x561029d008d0 pid: 5935 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 5935)
+spawned uWSGI worker 1 (pid: 6712, cores: 2)
+spawned uWSGI worker 2 (pid: 6713, cores: 2)
+spawned uWSGI worker 3 (pid: 6715, cores: 2)
+spawned uWSGI worker 4 (pid: 6717, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 25 14:39:30 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15035
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35575 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x55e29a09da30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e29a09da30 pid: 8214 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8214)
+spawned uWSGI worker 1 (pid: 8216, cores: 2)
+spawned uWSGI worker 2 (pid: 8217, cores: 2)
+spawned uWSGI worker 3 (pid: 8220, cores: 2)
+spawned uWSGI worker 4 (pid: 8222, cores: 2)
+spawned uWSGI http 1 (pid: 8223)
+[pid: 8220|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 663 bytes} [Fri Oct 25 19:40:46 2019] GET /index.html => generated 77 bytes in 325 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8220|app: 0|req: 2/2] 127.0.0.1 () {36 vars in 581 bytes} [Fri Oct 25 19:40:46 2019] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 8222|app: 0|req: 1/3] 127.0.0.1 () {38 vars in 655 bytes} [Fri Oct 25 19:41:11 2019] GET /polls/ => generated 217 bytes in 409 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 1/4] 127.0.0.1 () {40 vars in 703 bytes} [Fri Oct 25 19:41:15 2019] GET /polls/1/ => generated 697 bytes in 155 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 8222|app: 0|req: 2/5] 127.0.0.1 () {46 vars in 821 bytes} [Fri Oct 25 19:41:18 2019] POST /polls/1/vote/ => generated 0 bytes in 61 msecs (HTTP/1.1 302) 4 headers in 139 bytes (1 switches on core 1)
+[pid: 8222|app: 0|req: 3/6] 127.0.0.1 () {40 vars in 721 bytes} [Fri Oct 25 19:41:18 2019] GET /polls/1/results/ => generated 306 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 8222|app: 0|req: 4/7] 127.0.0.1 () {40 vars in 713 bytes} [Fri Oct 25 19:41:21 2019] GET /polls/1/ => generated 697 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+[pid: 8217|app: 0|req: 1/8] 127.0.0.1 () {46 vars in 821 bytes} [Fri Oct 25 19:41:23 2019] POST /polls/1/vote/ => generated 0 bytes in 75 msecs (HTTP/1.1 302) 4 headers in 139 bytes (1 switches on core 0)
+[pid: 8217|app: 0|req: 2/9] 127.0.0.1 () {40 vars in 721 bytes} [Fri Oct 25 19:41:23 2019] GET /polls/1/results/ => generated 305 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 8222|app: 0|req: 5/10] 127.0.0.1 () {40 vars in 713 bytes} [Fri Oct 25 19:41:25 2019] GET /polls/1/ => generated 697 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 2/11] 127.0.0.1 () {46 vars in 821 bytes} [Fri Oct 25 19:41:28 2019] POST /polls/1/vote/ => generated 752 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+[pid: 8222|app: 0|req: 6/12] 127.0.0.1 () {38 vars in 668 bytes} [Fri Oct 25 19:41:45 2019] GET /polls/1/vote/ => generated 752 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 8223)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 25 19:34:35 2019] ***
+compiled with version: 7.4.0 on 30 September 2019 03:04:03
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: xue-s400
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/xue/webframe/learning/mysite
+writing pidfile to uwsgi.pid
+detected binary path: /home/xue/webframe/h2/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/xue/webframe/learning/mysite
+your processes number limit is 15035
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+PEP 405 virtualenv detected: /home/xue/webframe/h2
+Set PythonHome to /home/xue/webframe/h2
+Python main interpreter initialized at 0x5609510d8950
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5609510d8950 pid: 3951 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3951)
+spawned uWSGI worker 1 (pid: 3953, cores: 2)
+spawned uWSGI worker 2 (pid: 3954, cores: 2)
+spawned uWSGI worker 3 (pid: 3956, cores: 2)
+spawned uWSGI worker 4 (pid: 3958, cores: 2)
+[pid: 3958|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 741 bytes} [Sat Oct 26 00:35:05 2019] GET /favicon.ico => generated 77 bytes in 421 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3956|app: 0|req: 1/2] 127.0.0.1 () {52 vars in 943 bytes} [Sat Oct 26 00:35:21 2019] GET / => generated 77 bytes in 47 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3954|app: 0|req: 1/3] 127.0.0.1 () {46 vars in 829 bytes} [Sat Oct 26 01:52:00 2019] GET /polls => generated 0 bytes in 90 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 3956|app: 0|req: 2/4] 127.0.0.1 () {46 vars in 831 bytes} [Sat Oct 26 01:52:00 2019] GET /polls/ => generated 217 bytes in 515 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 3958|app: 0|req: 2/5] 127.0.0.1 () {48 vars in 881 bytes} [Sat Oct 26 01:53:27 2019] GET /polls/1/ => generated 697 bytes in 181 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.

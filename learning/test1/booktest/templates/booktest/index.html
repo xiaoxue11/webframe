@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<ul>
+    {%for book in books%}
+    <li><a href="{%url 'booktest:detail' book.id%}">{{book.title}}</a></li>
+    {%endfor%}
+    <li><a href="{%url 'booktest:addbook'%}">Add new book</a></li>
+</ul>
+</body>
+</html>
